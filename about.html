@@ -50,6 +50,11 @@
   </nav>
 </header>
 
+  <!-- Pre-loader -->
+  <div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
 <div class="section-container">
     <div class="container">
       <div class="row">
@@ -115,6 +120,13 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+--> <script type="text/javascript" src="./main.70a66962.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+</script>
+</body>
 
 </html>
